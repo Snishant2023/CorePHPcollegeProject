@@ -16,9 +16,8 @@
 			$stmt = $mysqli->prepare($query);
 			$rc=$stmt->bind_param('ssssi', $ad_fname, $ad_lname, $ad_email, $ad_dpic, $ad_id);
 			$stmt->execute();
-			/*
-			*Use Sweet Alerts Instead Of This Fucked Up Javascript Alerts
-			*echo"<script>alert('Successfully Created Account Proceed To Log In ');</script>";
+
+			/*echo"<script>alert('Successfully Created Account Proceed To Log In ');</script>";
 			*/ 
 			//declare a varible which will be passed to alert function
 			if($stmt)
